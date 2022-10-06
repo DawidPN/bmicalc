@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Kalkulator BMI</title>
+</head>
+
+<body>
+    <header>
+        Kalkulator BMI
+    </header>
+    <form oninput="result1.value = zakres1.value , result2.value = zakres2.value , result3.value = parseFloat(zakres1.value/(Math.pow((result2.value/100),2))).toFixed(2)">
+        <input type="range" name="zakres1" value="0" min="0" max="200">
+        <output id="result1">0</output>/200 - Waga [kg] <br>
+        <input type="range" name="zakres2" value="0" min="0" max="220">
+        <output id="result2">0</output>/220 - Wzrost [cm] <br><br>
+        Twoje BMI to: <br>
+        <output id="result3">0</output>
+    </form>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Wskaźnik BMI</th>
+                <th>Co oznacza?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>
+                    <16,00</th>
+                <td>wygłodzenie</td>
+            </tr>
+            <tr>
+                <th>16,00 - 16,99</th>
+                <td>wychudzenie</td>
+            </tr>
+            <tr>
+                <th>17,00 - 18,49</th>
+                <td>niedowaga</td>
+            </tr>
+            <tr>
+                <th>18,50 - 24,99</th>
+                <td>pożądana masa ciała</td>
+            </tr>
+            <tr>
+                <th>25,00 - 29,99</th>
+                <td>nadwaga</td>
+            </tr>
+            <tr>
+                <th>30,00 - 34,99</th>
+                <td>otyłość I stopnia</td>
+            </tr>
+            <tr>
+                <th>35,00 - 39,99</th>
+                <td>otyłość II stopnia (duża)</td>
+            </tr>
+            <tr>
+                <th>≥40,00</th>
+                <td>otyłość III stopnia (olbrzymia)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- BMI = masa ciała [kg]/(wzrost ^2 [m]) -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
