@@ -14,9 +14,11 @@
 
 <body>
     <header>
-        Kalkulator BMI
+        <h1>
+            Kalkulator BMI
+        </h1>
     </header>
-    <form oninput="result1.value = zakres1.value , result2.value = zakres2.value , result3.value = parseFloat(zakres1.value/(Math.pow((result2.value/100),2))).toFixed(2)">
+    <form oninput="result1.value = zakres1.value;result2.value = zakres2.value;result3.value = parseFloat(zakres1.value/(Math.pow((result2.value/100),2))).toFixed(2)">
         <input type="range" name="zakres1" value="0" min="0" max="200">
         <output id="result1">0</output>/200 - Waga [kg] <br>
         <input type="range" name="zakres2" value="0" min="0" max="220">

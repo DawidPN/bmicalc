@@ -2,20 +2,20 @@ html {
   font-family: 'Ubuntu', sans-serif;
 }
 
-header {
+body {
+  margin: 0;
+  height: 500vh;
+  background: url("../assets/img/bg.jpg") center/cover fixed;
+  color: black;
+  font: bold;
+  font-size: 4vh;
+}
+
+h1 {
     font-size: 7vh;
 }
 
-body {
-    margin: 0;
-    height: 500vh;
-    background: url("../assets/img/bg.jpg") center/cover fixed;
-    color: black;
-    font: bold;
-    font-size: 4vh;
-  }
-
-  td, th {
+td, th {
     border: 3px solid black; 
     bottom: 15%;
     background-color:#E6F3FC;
